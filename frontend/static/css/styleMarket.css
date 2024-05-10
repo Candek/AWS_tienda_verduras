@@ -1,0 +1,46 @@
+head {
+    text-align: center;
+    font-size: 80px;
+}
+
+body {
+    background-color: LightBlue;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+}
+
+p {
+    text-align: center;
+    font-size: 40px;
+}
+
+img {
+    text-align: center;
+    height: 480px;
+}
+
+div {
+    text-align: center;
+    border: solid 0px;
+    
+}
+
+button {
+    background-color: Black;
+    color: white;
+    font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

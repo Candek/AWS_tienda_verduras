@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Buy</title>
+        <link rel="stylesheet" href="../static/css/styleBuy.css" type="text/css" media="all" />
+        <script src="../static/js/appBuy.js" type="text/javascript" charset="utf-8"></script>    
+    </head>
+    <body>
+        <h1> Puesto de Venta </h1>
+        <p>
+            Registre sus articulos a vender completando los campos: <span class="elemento"></span><sub class="subindice" title="Subtitulo"></sub><span class="elemento"></span>
+        </p>
+        <form action="/register_user" method="post">
+            <img src="https://img.freepik.com/vector-premium/vendedor-ambulante-frutas-verduras_107173-7978.jpg"></img> <br />
+            <label> Id </label> <input type="text" name="id"/> <br /> <br />
+            <label> Nombre </label> <input type="text" name="name"/>  <br /> <br />
+            <label> Categoria </label> <input type="text" name="category"/>  <br /> <br />
+            <label> Fecha Vencimiento </label> <input type="date" name="price"/>  <br /> <br />
+            <button onClick= {Buy_Product()} > Publicar </button>
+        </form>
+        
+    </body>
+</html>

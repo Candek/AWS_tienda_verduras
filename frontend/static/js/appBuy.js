@@ -1,0 +1,2 @@
+function Buy_Product () {
+}

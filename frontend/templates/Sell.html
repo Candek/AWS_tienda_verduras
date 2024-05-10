@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Sell</title>
+        <link rel="stylesheet" href="../static/css/styleSell.css" type="text/css" media="all" />
+        <script type="text/javascript" src="../static/js/appSell.js"></script>
+    </head>
+    <body>
+       <h1> Comprar Productos </h1>
+       <p>
+            Busque el id del producto en nuestro inventario: <span class="elemento"></span><sub class="subindice" title="Subtitulo"></sub><span class="elemento"></span>
+       </p>
+        <div>
+            <img src="https://www.shutterstock.com/shutterstock/photos/2288900053/display_1500/stock-vector-modern-logo-vegetable-in-shopping-cart-for-grocery-delivery-logo-design-vector-2288900053.jpg"></img> <br /> <br />
+            <label> Busque por Id </label> <input type="number" id="id"/> <br /> <br />
+            <o>
+             Resultado Inventario : <span class="elemento"></span><sub class="subindice" title="Subtitulo"></sub><span class="elemento"></span>
+            </o> 
+            <textarea id="txt_data"></textarea> <br /> <br />
+            <button onClick= {Sell_Product()} > Sell </button>
+        </div>
+    </body>
+</html>
