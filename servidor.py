@@ -1,12 +1,12 @@
 from flask import Flask
 
 
-app = Flask(__name__, template_folder="frontend/templates", static_folder="frontend", static_url_path="") 
+app = Flask(__name__, template_folder="frontend/templates", static_folder="frontend/static", static_url_path="") 
 
 from routes.route import *
 
 
 if __name__ == "__main__":
-    host = "127.0.0.1"
-    port = "8080"
+    host = "0.0.0.0"
+    port = "80"
     app.run(host, port, debug=True)
