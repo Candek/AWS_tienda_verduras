@@ -29,11 +29,14 @@ def insert_records(id, name, category, price):
             cursor.execute(query)
             connection.commit()
             print("producto Agregado")
+            return True
         else:
             print("error en agregar producto")
+            return False
         
      except Exception as err:  ##Esto me faltó revalidarlo
         print ("error creating user",err)
+        return False
         
 def consult_records(id):
     query = "SELECT * FROM users WHERE id = " + id
