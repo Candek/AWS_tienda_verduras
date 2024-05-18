@@ -11,6 +11,7 @@ function Sell_Product () {
         if(data.status == "ok"){
             obj_data = data.name + " " + data.category + " " + data.price
             document.getElementById("txt_data").value = obj_data
+            document.getElementById("foto_user").src = 'https://my-repo-imagenes-aws-curso.s3.amazonaws.com/' + data.photo
             
         }
         else{

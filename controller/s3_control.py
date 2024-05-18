@@ -2,6 +2,8 @@ from boto3.session import Session
 from botocore.exceptions import ClientError
 from keys import ACCESS_KEY, SECRET_KEY
 
+bucket_name = "my-repo-imagenes-aws-curso"
+
 def connection_s3():
     try:
         sesion_aws = Session(ACCESS_KEY, SECRET_KEY)
@@ -20,9 +22,17 @@ def save_file(id, photo):
     
     
 def upload_file_s3(s3_connection, photo_path):
-    bucket_name = "my-repo-imagenes-aws-curso"
+    
     path_s3 = "images/" + photo_path.split("/")[2]
     s3_connection.meta.client.upload_file(photo_path, bucket_name, path_s3)
     
-
+def get_file_s3(s3, id):
+    bucket_repo = s3.Bucket(bucket_name)
+    all_objects = bucket_repo.objects.all()
+    for object in all_objects:
+        path_file = object.key
+        name_file = path_file.split('/')[1].split('.')[0]
+        if name_file == id:
+            return path_file
+    return None 
     
